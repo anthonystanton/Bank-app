@@ -225,7 +225,7 @@ let currentAccount, timer;
 // CHECKING IF LOGIN DETAILS ARE CORRECT
 const checkLogin = (e) => {
   e.preventDefault();
-  const user = inputLoginUsername.value;
+  const user = inputLoginUsername.value.toLowerCase();
   const pin = parseInt(inputLoginPin.value);
   currentAccount = accounts.find((acc) => acc.username === user);
   setTimeout(() => {
