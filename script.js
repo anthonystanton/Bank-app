@@ -252,7 +252,7 @@ const makeTransfer = (e) => {
   e.preventDefault();
 
   // GETTING TRANSFER TO AND AMOUNT DETAILS
-  const transferTo = inputTransferTo.value;
+  const transferTo = inputTransferTo.value.toLowerCase();
   const transferAmount = parseInt(inputTransferAmount.value);
 
   // GETTING THE ACCOUNT MAKING THE TRANSFER TO
